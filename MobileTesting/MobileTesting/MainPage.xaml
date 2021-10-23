@@ -2,12 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileTesting.MainPage">
-
+<!--
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Button FontFamily="Marlett" FontSize="20"/>
+            <Button FontFamily="Marlett" FontSize="20"/>
+            <Label Text="Start developing LEA GO" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
         <Label FontSize="16" Padding="30,24,30,0">
             <Label.FormattedText>
@@ -20,5 +22,52 @@
             </Label.FormattedText>
         </Label>
     </StackLayout>
+    -->
+    
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+
+        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2"></ImageButton>
+        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="2"></ImageButton>
+        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2"></ImageButton>
+        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="2"></ImageButton>
+
+        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0"></ImageButton>
+        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0"></ImageButton>
+        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0"></ImageButton>
+        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0"></ImageButton>
+
+        <!--
+        <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="2" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="2" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="2" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="2" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="3" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="2" Fill="black"></Rectangle>
+        -->
+        
+
+    </Grid>
+    
+
 
 </ContentPage>
