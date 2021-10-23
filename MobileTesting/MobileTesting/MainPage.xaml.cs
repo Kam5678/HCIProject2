@@ -14,5 +14,17 @@ namespace MobileTesting
         {
             InitializeComponent();
         }
+
+        public void ArrowPressed(object sender, EventArgs e)
+        {
+            ImageButton thisButton = sender as ImageButton;
+            thisButton.Opacity = 0.5;
+        }
+
+        public void ArrowReleased(object sender, EventArgs e)
+        {
+            ImageButton thisButton = sender as ImageButton;
+            thisButton.Opacity = 1;
+        }
     }
 }
