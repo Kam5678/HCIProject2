@@ -38,6 +38,8 @@
             <RowDefinition Height="0.9*"/>
         </Grid.RowDefinitions>
 
+        <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="0" Grid.Column="1"></Image>
+
 
         <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
         <ImageButton ClassId="Right2" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
@@ -49,7 +51,6 @@
         <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
         <ImageButton ClassId="Left4" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
 
-        <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="0" Grid.Column="1"></Image>
         
         <!--
         <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
