@@ -39,15 +39,17 @@
         </Grid.RowDefinitions>
 
 
-        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" ></ImageButton>
-        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
-        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
-        <ImageButton Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" ></ImageButton>
+        <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
+        <ImageButton ClassId="Right2" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Right3" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Right4" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent" ></ImageButton>
 
-        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
-        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
-        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
-        <ImageButton Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  ></ImageButton>
+        <ImageButton ClassId="Left1" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Left2" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Left4" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+
+        <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="0" Grid.Column="1"></Image>
         
         <!--
         <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
