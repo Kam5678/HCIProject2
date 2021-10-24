@@ -39,6 +39,7 @@
         </Grid.RowDefinitions>
 
         <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="0" Grid.Column="1"></Image>
+        <!--<Image x:Name="Image2" Source="glassesTest2.jpg" Grid.Row="0" Grid.Column="1"></Image> -->
 
 
         <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
@@ -51,7 +52,9 @@
         <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
         <ImageButton ClassId="Left4" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
 
-        
+        <Label x:Name="LabelX" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Text="a"></Label>
+        <Label x:Name="LabelY" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start" Text="b"></Label>
+        <Label x:Name="LabelZ" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" Text="c"></Label>
         <!--
         <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="2" Fill="black"></Rectangle>

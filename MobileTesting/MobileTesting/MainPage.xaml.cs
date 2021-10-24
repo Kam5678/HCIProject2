@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace MobileTesting
 {
@@ -13,6 +14,21 @@ namespace MobileTesting
         public MainPage()
         {
             InitializeComponent();
+            if (Accelerometer.IsMonitoring)
+                return;
+
+            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+            Accelerometer.Start(SensorSpeed.UI);
+        }
+
+        private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
+        {
+            
+            LabelX.Text = e.Reading.Acceleration.X.ToString();
+            LabelY.Text = e.Reading.Acceleration.Y.ToString();
+            LabelZ.Text = e.Reading.Acceleration.Z.ToString();
+
+           
         }
 
         public void ArrowPressed(object sender, EventArgs e)
@@ -24,14 +40,14 @@ namespace MobileTesting
             {
                 //Console.WriteLine("R");
                 Image1.TranslateTo(1000, Image1.Y, 600, Easing.CubicInOut); // With Animation
-  
+
             }
             else if (thisButton.ClassId.Equals("Left1"))
             {
                 //Console.WriteLine("RR");
                 Image1.TranslateTo(0, Image1.Y, 600, Easing.CubicInOut); // Goes straight no animation
             }
-            
+
         }
 
         public void ArrowReleased(object sender, EventArgs e)
@@ -39,5 +55,9 @@ namespace MobileTesting
             ImageButton thisButton = sender as ImageButton;
             thisButton.Opacity = 1;
         }
+
+        // Set speed delay for monitoring changes.
+
+        
     }
 }
