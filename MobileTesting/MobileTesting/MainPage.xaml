@@ -26,50 +26,140 @@
     
 
     <Grid BackgroundColor="White">
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*"/>
+            <!--Margin-->
+            <ColumnDefinition Width="15"/>
+
+            <ColumnDefinition Width="50"/>
+
+            <!--Spacing-->
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="0.2*"/>
+
+            <ColumnDefinition Width="50"/>
+
+            <!--Margin-->
+            <ColumnDefinition Width="15"/>
+
         </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.9*"/>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="0.9*"/>
+
+            <!--Margin-->
+            <RowDefinition Height="15"/>
+
+            <!--Time
+
+            Maybe remove this? Since there's a time at the top?
+            Depends on how it looks on Edward's phone.
+
+            -->
+            <RowDefinition Height="50"/>
+
+
+            <!--Lock/Unlock Icon-->
+            <RowDefinition Height="50"/>
+
+
+            <!--Face-->
+
+            <!--Hair-->
+            <RowDefinition Height="125"/>
+
+            <!--Glasses/Eyes-->
+            <RowDefinition Height="125"/>
+
+            <!--Mouth-->
+            <RowDefinition Height="125"/>
+
+
+
+            <!--Filler-->
+            <RowDefinition Height="*"/>
+
+            <!--Margin-->
+            <RowDefinition Height="15"/>
+
         </Grid.RowDefinitions>
 
-        <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="0" Grid.Column="1"></Image>
-        <!--<Image x:Name="Image2" Source="glassesTest2.jpg" Grid.Row="0" Grid.Column="1"></Image> -->
 
 
-        <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
-        <ImageButton ClassId="Right2" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Right3" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Right4" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent" ></ImageButton>
+        <Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="3" Grid.Column="2"></Image>
+        <!--<Image x:Name="Image2" Source="glassesTest2.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
 
-        <ImageButton ClassId="Left1" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Left2" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Left4" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+
+        <ImageButton ClassId="Left1" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Left2" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <!--<ImageButton ClassId="Left4" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>-->
+
+
+        <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
+        <ImageButton ClassId="Right2" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <ImageButton ClassId="Right3" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
+        <!--<ImageButton ClassId="Right4" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="2" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent" ></ImageButton>-->
 
         <Label x:Name="LabelX" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Text="a"></Label>
-        <Label x:Name="LabelY" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start" Text="b"></Label>
-        <Label x:Name="LabelZ" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" Text="c"></Label>
+        <Label x:Name="LabelY" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Text="b"></Label>
+        <Label x:Name="LabelZ" Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="Center" Text="c"></Label>
+
         <!--
+        <Rectangle Grid.Row="0" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="4" Fill="black"></Rectangle>
 
         <Rectangle Grid.Row="1" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="1" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="1" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="4" Fill="black"></Rectangle>
 
         <Rectangle Grid.Row="2" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="2" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="2" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="4" Fill="black"></Rectangle>
 
         <Rectangle Grid.Row="3" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="3" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="3" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="4" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="4" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="4" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="4" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="4" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="4" Grid.Column="4" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="5" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="5" Grid.Column="4" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="6" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="6" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="6" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="6" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="6" Grid.Column="4" Fill="black"></Rectangle>
+
+        <Rectangle Grid.Row="7" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="7" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="7" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="7" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="7" Grid.Column="4" Fill="black"></Rectangle>
+
+        -->
+
+        <!--
+        <Rectangle Grid.Row="8" Grid.Column="0" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="8" Grid.Column="1" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="8" Grid.Column="2" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="8" Grid.Column="3" Fill="black"></Rectangle>
+        <Rectangle Grid.Row="8" Grid.Column="4" Fill="black"></Rectangle>
         -->
         
 
