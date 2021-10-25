@@ -83,6 +83,8 @@
 
         </Grid.RowDefinitions>
 
+
+        <!--Hair Carousel-->
         <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -91,6 +93,8 @@
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
 
+
+        <!--Glasses Carousel-->
         <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -99,6 +103,7 @@
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
 
+        <!--Mouths Carousel-->
         <forms:CarouselView x:Name="CarouselView3" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -106,38 +111,16 @@
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
-
-
-
-        <!--<Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="readingEyeglasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="sunGlasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="sunGlasses2.png" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="vrGlasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
-
-
-        <!--<Image x:Name="Image2" Source="glassesTest2.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
-
-        <!--
-
-        <ImageButton ClassId="Left1" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Left2" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Left3" Source="downloadRleft.png" VerticalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="1" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-
-        
-        <ImageButton ClassId="Right1"  Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased" BackgroundColor="Color.Transparent" ></ImageButton>
-        <ImageButton ClassId="Right2" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-        <ImageButton ClassId="Right3" Source="downloadR.png" VerticalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="3" Pressed="ArrowPressed"  Released="ArrowReleased"  BackgroundColor="Color.Transparent"  ></ImageButton>
-
-        -->
         
 <!--
         <Label x:Name="LabelX" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Text="a"></Label>
         <Label x:Name="LabelY" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Text="b"></Label>
         <Label x:Name="LabelZ" Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="Center" Text="c"></Label>
 
+-->
         
-        
+
+<!--
         <Rectangle Grid.Row="0" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="1" Fill="black"></Rectangle>
         <Rectangle Grid.Row="0" Grid.Column="2" Fill="black"></Rectangle>

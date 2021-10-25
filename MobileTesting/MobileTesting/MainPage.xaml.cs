@@ -14,27 +14,32 @@ namespace MobileTesting
         public MainPage()
         {
             InitializeComponent();
-            var names = new List<string> { "A", "B", "C", "D" };
-            var Images1 = new List<string>
+
+            var Hair = new List<string>
             {
-                "sunGlasses.png", "sunGlasses2.png", "vrGlasses.png"
+                "maleHair.png", "shortMaleHair.png", "femaleLongHair.png", "femaleShortHair.png", "femaleLongHair2.png"
             };
-            var Images2 = new List<string>
+
+            var Glasses = new List<string>
             {
-                "glassesTest.jpg"
+                "sunGlasses.png", "sunGlasses2.png", "vrGlasses.png", "readingEyeglasses.png"
             };
-            var Images3 = new List<string>
+
+            var Mouths = new List<string>
             {
-                "glassesTest.jpg"
+                "flatMouth.png", "grinMouth.png", "smileMouth.png", "openMouth.png", "tongueOut.png", "vampireMouth.png"
             };
-            CarouselView1.ItemsSource = Images1;
-            CarouselView2.ItemsSource = Images2;
-            CarouselView3.ItemsSource = Images3;
+
+            CarouselView1.ItemsSource = Hair;
+            CarouselView2.ItemsSource = Glasses;
+            CarouselView3.ItemsSource = Mouths;
+
             // if (Accelerometer.IsMonitoring)
             //     return;
 
             //Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
             //Accelerometer.Start(SensorSpeed.UI);
+
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
@@ -46,34 +51,6 @@ namespace MobileTesting
 
            
         }
-
-        //public void ArrowPressed(object sender, EventArgs e)
-        //{
-        //    ImageButton thisButton = sender as ImageButton;
-        //    Console.WriteLine(thisButton.ClassId);
-        //    thisButton.Opacity = 0.5;
-        //    if (thisButton.ClassId.Equals("Right1"))
-        //    {
-        //        //Console.WriteLine("R");
-        //        Image1.TranslateTo(1000, Image1.Y, 600, Easing.CubicInOut); // With Animation
-
-        //    }
-        //    else if (thisButton.ClassId.Equals("Left1"))
-        //    {
-        //        //Console.WriteLine("RR");
-        //        Image1.TranslateTo(0, Image1.Y, 600, Easing.CubicInOut); // Goes straight no animation
-        //    }
-
-        //}
-
-        //public void ArrowReleased(object sender, EventArgs e)
-        //{
-        //    ImageButton thisButton = sender as ImageButton;
-        //    thisButton.Opacity = 1;
-        //}
-
-        // Set speed delay for monitoring changes.
-
         
     }
 }
