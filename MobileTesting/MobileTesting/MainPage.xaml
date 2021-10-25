@@ -85,10 +85,10 @@
 
 
         <!--<Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
-        <Image Source="reading-eyeglasses.png" Grid.Row="3" Grid.Column="2"></Image>
-        <!--<Image Source="sun-glasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="sun-glasses(1).png" Grid.Row="3" Grid.Column="2"></Image>-->
-        <!--<Image Source="vr-glasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
+        <!--<Image Source="readingEyeglasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
+        <!--<Image Source="sunGlasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
+        <!--<Image Source="sunGlasses2.png" Grid.Row="3" Grid.Column="2"></Image>-->
+        <!--<Image Source="vrGlasses.png" Grid.Row="3" Grid.Column="2"></Image>-->
 
 
         <!--<Image x:Name="Image2" Source="glassesTest2.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
