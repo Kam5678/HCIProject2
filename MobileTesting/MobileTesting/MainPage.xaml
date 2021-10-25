@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="http://xamarin.com/schemas/2014/forms/design"
              x:Class="MobileTesting.MainPage">
 <!--
     <StackLayout>
@@ -82,6 +83,30 @@
 
         </Grid.RowDefinitions>
 
+        <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+        <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+        <forms:CarouselView x:Name="CarouselView3" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
 
 
         <!--<Image x:Name="Image1" Source="glassesTest.jpg" Grid.Row="3" Grid.Column="2"></Image>-->
@@ -106,7 +131,7 @@
 
         -->
         
-
+<!--
         <Label x:Name="LabelX" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Text="a"></Label>
         <Label x:Name="LabelY" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Text="b"></Label>
         <Label x:Name="LabelZ" Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="Center" Text="c"></Label>
@@ -134,7 +159,7 @@
         <Rectangle Grid.Row="3" Grid.Column="0" Fill="black"></Rectangle>
         <Rectangle Grid.Row="3" Grid.Column="1" Fill="black"></Rectangle>
 
-        <!--<Rectangle Grid.Row="3" Grid.Column="2" Fill="black"></Rectangle>-->
+        <Rectangle Grid.Row="3" Grid.Column="2" Fill="black"></Rectangle>
 
         <Rectangle Grid.Row="3" Grid.Column="3" Fill="black"></Rectangle>
         <Rectangle Grid.Row="3" Grid.Column="4" Fill="black"></Rectangle>
@@ -162,7 +187,7 @@
         <Rectangle Grid.Row="7" Grid.Column="2" Fill="black"></Rectangle>
         <Rectangle Grid.Row="7" Grid.Column="3" Fill="black"></Rectangle>
         <Rectangle Grid.Row="7" Grid.Column="4" Fill="black"></Rectangle>
-
+-->
         
 
         <!--

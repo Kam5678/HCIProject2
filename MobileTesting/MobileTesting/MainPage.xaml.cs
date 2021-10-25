@@ -14,19 +14,35 @@ namespace MobileTesting
         public MainPage()
         {
             InitializeComponent();
-            if (Accelerometer.IsMonitoring)
-                return;
+            var names = new List<string> { "A", "B", "C", "D" };
+            var Images1 = new List<string>
+            {
+                "sunGlasses.png", "sunGlasses2.png", "vrGlasses.png"
+            };
+            var Images2 = new List<string>
+            {
+                "glassesTest.jpg"
+            };
+            var Images3 = new List<string>
+            {
+                "glassesTest.jpg"
+            };
+            CarouselView1.ItemsSource = Images1;
+            CarouselView2.ItemsSource = Images2;
+            CarouselView3.ItemsSource = Images3;
+            // if (Accelerometer.IsMonitoring)
+            //     return;
 
-            Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
-            Accelerometer.Start(SensorSpeed.UI);
+            //Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+            //Accelerometer.Start(SensorSpeed.UI);
         }
 
         private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
         {
             
-            LabelX.Text = e.Reading.Acceleration.X.ToString();
-            LabelY.Text = e.Reading.Acceleration.Y.ToString();
-            LabelZ.Text = e.Reading.Acceleration.Z.ToString();
+           // LabelX.Text = e.Reading.Acceleration.X.ToString();
+           // LabelY.Text = e.Reading.Acceleration.Y.ToString();
+           // LabelZ.Text = e.Reading.Acceleration.Z.ToString();
 
            
         }
