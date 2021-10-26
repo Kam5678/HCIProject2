@@ -68,10 +68,10 @@
             <RowDefinition Height="125"/>
 
             <!--Glasses/Eyes-->
-            <RowDefinition Height="260"/>
+            <RowDefinition Height="125"/>
 
             <!--Mouth-->
-            <RowDefinition Height="0"/>
+            <RowDefinition Height="125"/>
 
             <!--Filler-->
             <RowDefinition Height="*"/>
@@ -86,32 +86,34 @@
 
         <Image Aspect="AspectFit" Grid.Row="3" Grid.Column="2" Source="regularHat.png"></Image>
 
+
         <!--
+        <Image  Margin="20, 20, 20, 40" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"   Source="sunGlasses.png"></Image>
 
-        <Image VerticalOptions="Start" Margin="40, 20, 40, 0" Grid.Row="4" Grid.Column="2" Source="sunGlasses.png"></Image>
-
-        <Image VerticalOptions="End" Margin="70, 20, 70, 0" Grid.Row="4" Grid.Column="2" Source="flatMouth.png"></Image>
-
+        <Image  Margin="0, 30, 0, 0" HorizontalOptions="CenterAndExpand"  Grid.Row="5" Grid.Column="2" Source="flatMouth.png"></Image>
         -->
-
         
 
-        <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="2">
+
+
+        
+        <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"  Margin="20, 20, 20, 40" >
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Image VerticalOptions="Start" Margin="40, 20, 40, 0" Source="{Binding .}"/>
+                    <Image   Source="{Binding .}"/>
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
 
 
-        <forms:CarouselView x:Name="CarouselView3" Grid.Row="4" Grid.Column="2" >
+        <forms:CarouselView x:Name="CarouselView3" HorizontalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="2"  Margin="0, 30, 0, 0" >
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Image VerticalOptions="End" Margin="70, 20, 70, 0" Source="{Binding .}"/>
+                    <Image  Source="{Binding .}"/>
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
+        
 
         
 
