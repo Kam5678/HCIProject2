@@ -17,7 +17,7 @@ namespace MobileTesting
 
             var Hair = new List<string>
             {
-                "maleHair.png", "shortMaleHair.png", "femaleLongHair.png", "femaleShortHair.png", "femaleLongHair2.png"
+                "regularHat.png", "bonnetHat.png", "cowboyHat.png", "policeHat.png", "witchHat.png", "tallHat.png"
             };
 
             var Glasses = new List<string>
@@ -30,7 +30,7 @@ namespace MobileTesting
                 "flatMouth.png", "grinMouth.png", "smileMouth.png", "openMouth.png", "tongueOut.png", "vampireMouth.png"
             };
 
-            CarouselView1.ItemsSource = Hair;
+            //CarouselView1.ItemsSource = Hair;
             CarouselView2.ItemsSource = Glasses;
             CarouselView3.ItemsSource = Mouths;
 

@@ -68,12 +68,10 @@
             <RowDefinition Height="125"/>
 
             <!--Glasses/Eyes-->
-            <RowDefinition Height="125"/>
+            <RowDefinition Height="260"/>
 
             <!--Mouth-->
-            <RowDefinition Height="125"/>
-
-
+            <RowDefinition Height="0"/>
 
             <!--Filler-->
             <RowDefinition Height="*"/>
@@ -84,7 +82,40 @@
         </Grid.RowDefinitions>
 
 
-        <!--Hair Carousel-->
+        <Image Source="blankHead.jpg" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="4" />
+
+        <Image Aspect="AspectFit" Grid.Row="3" Grid.Column="2" Source="regularHat.png"></Image>
+
+        <!--
+
+        <Image VerticalOptions="Start" Margin="40, 20, 40, 0" Grid.Row="4" Grid.Column="2" Source="sunGlasses.png"></Image>
+
+        <Image VerticalOptions="End" Margin="70, 20, 70, 0" Grid.Row="4" Grid.Column="2" Source="flatMouth.png"></Image>
+
+        -->
+
+        
+
+        <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="2">
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image VerticalOptions="Start" Margin="40, 20, 40, 0" Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+
+        <forms:CarouselView x:Name="CarouselView3" Grid.Row="4" Grid.Column="2" >
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image VerticalOptions="End" Margin="70, 20, 70, 0" Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+        
+
+        <!--Hair Carousel
         <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -94,7 +125,7 @@
         </forms:CarouselView>
 
 
-        <!--Glasses Carousel-->
+        Glasses Carousel
         <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -103,7 +134,7 @@
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
 
-        <!--Mouths Carousel-->
+        Mouths Carousel
         <forms:CarouselView x:Name="CarouselView3" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -111,7 +142,9 @@
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
-        
+
+        -->
+
 <!--
         <Label x:Name="LabelX" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Text="a"></Label>
         <Label x:Name="LabelY" Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Text="b"></Label>
