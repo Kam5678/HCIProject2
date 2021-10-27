@@ -17,7 +17,7 @@ namespace MobileTesting
 
             var Hair = new List<string>
             {
-                "regularHat.png", "bonnetHat.png", "cowboyHat.png", "policeHat.png", "witchHat.png", "tallHat.png"
+                "regularHat.png", "policeHat.png", "hardHat.png", "graduationHat.png", "magicHat.png", "magicHat2.png", "pamelaHat.png",
             };
 
             var Glasses = new List<string>
@@ -30,7 +30,7 @@ namespace MobileTesting
                 "flatMouth.png", "grinMouth.png", "smileMouth.png", "openMouth.png", "tongueOut.png", "vampireMouth.png"
             };
 
-            //CarouselView1.ItemsSource = Hair;
+            CarouselView1.ItemsSource = Hair;
             CarouselView2.ItemsSource = Glasses;
             CarouselView3.ItemsSource = Mouths;
 
@@ -42,7 +42,8 @@ namespace MobileTesting
 
         }
 
-        private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
+
+            private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
         {
             
            // LabelX.Text = e.Reading.Acceleration.X.ToString();
@@ -51,6 +52,30 @@ namespace MobileTesting
 
            
         }
-        
+
+        int nig = 0;
+
+        void CarouselView2_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
+        {
+            bool equal = String.Equals(CarouselView2.CurrentItem.ToString(), "sunGlasses2.png", StringComparison.InvariantCulture);
+
+            if (equal){
+
+                Lock.Source = "unlock.png";
+
+            }
+
+            if (!equal)
+            {
+
+                Lock.Source = "lock.png";
+
+            }
+
+        }
+
+
     }
+
+
 }

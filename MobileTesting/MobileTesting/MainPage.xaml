@@ -49,26 +49,20 @@
             <!--Margin-->
             <RowDefinition Height="15"/>
 
-            <!--Time
+            <!--Lock-->
+            <RowDefinition Height="45"/>
 
-            Maybe remove this? Since there's a time at the top?
-            Depends on how it looks on Edward's phone.
-
-            -->
-            <RowDefinition Height="50"/>
-
-
-            <!--Lock/Unlock Icon-->
-            <RowDefinition Height="50"/>
+            <!--Spacing-->
+            <RowDefinition Height="5"/>
 
 
             <!--Face-->
 
             <!--Hair-->
-            <RowDefinition Height="125"/>
+            <RowDefinition Height="165"/>
 
             <!--Glasses/Eyes-->
-            <RowDefinition Height="125"/>
+            <RowDefinition Height="130"/>
 
             <!--Mouth-->
             <RowDefinition Height="125"/>
@@ -82,25 +76,32 @@
         </Grid.RowDefinitions>
 
 
+        <Image x:Name="Lock" Source="lock.png" Grid.Column="2" Grid.Row="1" Grid.RowSpan="3" VerticalOptions="Start" HorizontalOptions="Center" Margin="80,20,80,0"/>
+
         <Image Source="blankHead.jpg" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="4" />
 
-        <Image Aspect="AspectFit" Grid.Row="3" Grid.Column="2" Source="regularHat.png"></Image>
-
-
         <!--
+
+        <Image Aspect="AspectFit" Grid.Row="3" Grid.Column="2" Source="regularHat.png"></Image>
+        
         <Image  Margin="20, 20, 20, 40" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"   Source="sunGlasses.png"></Image>
 
         <Image  Margin="0, 30, 0, 0" HorizontalOptions="CenterAndExpand"  Grid.Row="5" Grid.Column="2" Source="flatMouth.png"></Image>
+
         -->
-        
 
-
-
-        
-        <forms:CarouselView x:Name="CarouselView2" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"  Margin="20, 20, 20, 40" >
+        <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" Margin="0, 30, 0, 0">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Image   Source="{Binding .}"/>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </forms:CarouselView.ItemTemplate>
+        </forms:CarouselView>
+
+        <forms:CarouselView x:Name="CarouselView2" CurrentItemChanged="CarouselView2_CurrentItemChanged" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"  Margin="20, 20, 20, 40" >
+            <forms:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
@@ -113,8 +114,6 @@
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
-        
-
         
 
         <!--Hair Carousel
