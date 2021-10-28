@@ -24,7 +24,7 @@ namespace MobileTesting
 
             var Glasses = new List<string>
             {
-                "sunGlasses.png", "sunGlasses2.png", "sunGlasses3.png", "sunGlasses4.png", "sunGlasses5.png", "vrGlasses.png", "readingEyeglasses.png"
+                "sunGlasses.png", "sunGlasses2.png", "sunGlasses3.png", "sunGlasses4.png", "vrGlasses.png", "readingEyeglasses.png"
             };
 
             var Mouths = new List<string>
@@ -86,7 +86,7 @@ namespace MobileTesting
         {
             string currentHat = CarouselView1.CurrentItem.ToString();
 
-            bool equal = String.Equals(currentHat, "policeHat.png", StringComparison.InvariantCulture);
+            bool equal = String.Equals(currentHat, "pamelaHat.png", StringComparison.InvariantCulture);
 
             if (equal){
 
@@ -148,7 +148,7 @@ namespace MobileTesting
 
         void CarouselView2_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
         {
-            bool equal = String.Equals(CarouselView2.CurrentItem.ToString(), "sunGlasses2.png", StringComparison.InvariantCulture);
+            bool equal = String.Equals(CarouselView2.CurrentItem.ToString(), "readingEyeglasses.png", StringComparison.InvariantCulture);
 
             if (equal){
 
@@ -169,7 +169,7 @@ namespace MobileTesting
 
         void CarouselView3_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
         {
-            bool equal = String.Equals(CarouselView3.CurrentItem.ToString(), "grinMouth.png", StringComparison.InvariantCulture);
+            bool equal = String.Equals(CarouselView3.CurrentItem.ToString(), "openMouth.png", StringComparison.InvariantCulture);
 
             if (equal)
             {
