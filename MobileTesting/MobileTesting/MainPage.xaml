@@ -80,6 +80,15 @@
 
         <Image Source="blankHead.jpg" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="4" />
 
+        <Rectangle x:Name="whiteRectangle" Margin="0, 60, 0, 70" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="2" Fill="white"></Rectangle>
+
+        <!--
+
+        "regularHat.png", "policeHat.png", "hardHat.png", "graduationHat.png", "cowboyHat.png", "magicHat.png", "magicHat2.png", "pamelaHat.png",
+
+
+        -->
+
         <!--
 
         <Image Aspect="AspectFit" Grid.Row="3" Grid.Column="2" Source="regularHat.png"></Image>
@@ -90,7 +99,7 @@
 
         -->
 
-        <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" Margin="0, 30, 0, 0">
+        <forms:CarouselView x:Name="CarouselView1" CurrentItemChanged="CarouselView1_CurrentItemChanged" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" Margin="0, 30, 0, 0">
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Image Source="{Binding .}"/>
@@ -106,15 +115,13 @@
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
 
-
-        <forms:CarouselView x:Name="CarouselView3" HorizontalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="2"  Margin="0, 30, 0, 0" >
+        <forms:CarouselView x:Name="CarouselView3" CurrentItemChanged="CarouselView3_CurrentItemChanged" HorizontalOptions="CenterAndExpand" Grid.Row="5" Grid.Column="2"  Margin="0, 30, 0, 0" >
             <forms:CarouselView.ItemTemplate>
                 <DataTemplate>
                     <Image  Source="{Binding .}"/>
                 </DataTemplate>
             </forms:CarouselView.ItemTemplate>
         </forms:CarouselView>
-        
 
         <!--Hair Carousel
         <forms:CarouselView x:Name="CarouselView1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using System.Threading;
 
 namespace MobileTesting
 {
@@ -17,12 +18,13 @@ namespace MobileTesting
 
             var Hair = new List<string>
             {
-                "regularHat.png", "policeHat.png", "hardHat.png", "graduationHat.png", "magicHat.png", "magicHat2.png", "pamelaHat.png",
+                // regulatHat, hardHat, cowboyHat, magicHat, magicHat2, pamelaHat
+                "regularHat.png", "policeHat.png", "hardHat.png", "graduationHat.png", "cowboyHat.png", "magicHat.png", "magicHat2.png", "pamelaHat.png",
             };
 
             var Glasses = new List<string>
             {
-                "sunGlasses.png", "sunGlasses2.png", "vrGlasses.png", "readingEyeglasses.png"
+                "sunGlasses.png", "sunGlasses2.png", "sunGlasses3.png", "sunGlasses4.png", "sunGlasses5.png", "vrGlasses.png", "readingEyeglasses.png"
             };
 
             var Mouths = new List<string>
@@ -53,7 +55,90 @@ namespace MobileTesting
            
         }
 
-        int nig = 0;
+        bool correctHat = false;
+        bool correctGlasses = false;
+        bool correctMouth = false;
+
+        void CorrectCombo()
+        {
+            if (correctHat && correctGlasses && correctMouth)
+            {
+                Lock.Source = "unlock.png";
+            }
+
+            else
+            {
+                Lock.Source = "lock.png";
+            }
+
+            //Thread.Sleep(1000);
+            //System.Diagnostics.Process.GetCurrentProcess().Kill();
+
+        }
+
+        void CarouselView1_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
+        {
+            string currentHat = CarouselView1.CurrentItem.ToString();
+
+            bool equal = String.Equals(currentHat, "policeHat.png", StringComparison.InvariantCulture);
+
+            if (equal){
+
+                correctHat = true;
+            }
+
+            else {
+
+                correctHat = false;
+
+            }
+
+            CorrectCombo();
+
+
+            // "regularHat.png", "policeHat.png", "hardHat.png", "graduationHat.png", "cowboyHat.png", "magicHat.png", "magicHat2.png", "pamelaHat.png",
+
+            if (String.Equals(currentHat, "regularHat.png", StringComparison.InvariantCulture)) {
+
+                whiteRectangle.Margin = new Thickness(0,60,0,85);
+            }
+
+            if (String.Equals(currentHat, "policeHat.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 110);
+            }
+
+            if (String.Equals(currentHat, "hardHat.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 85);
+            }
+
+            if (String.Equals(currentHat, "graduationHat.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(1000, 1000, 1000, 1000);
+            }
+
+            if (String.Equals(currentHat, "cowboyHat.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 95);
+            }
+
+            if (String.Equals(currentHat, "magicHat.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 70);
+            }
+
+            if (String.Equals(currentHat, "magicHat2.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 70);
+            }
+
+            if (String.Equals(currentHat, "magicHat2.png", StringComparison.InvariantCulture))
+            {
+                whiteRectangle.Margin = new Thickness(0, 60, 0, 70);
+            }
+
+        }
 
         void CarouselView2_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
         {
@@ -61,20 +146,42 @@ namespace MobileTesting
 
             if (equal){
 
-                Lock.Source = "unlock.png";
+                correctGlasses = true;
 
             }
 
-            if (!equal)
+            else
             {
 
-                Lock.Source = "lock.png";
+                correctGlasses = false;
 
             }
+
+            CorrectCombo();
 
         }
 
+        void CarouselView3_CurrentItemChanged(System.Object sender, Xamarin.Forms.CurrentItemChangedEventArgs e)
+        {
+            bool equal = String.Equals(CarouselView3.CurrentItem.ToString(), "grinMouth.png", StringComparison.InvariantCulture);
 
+            if (equal)
+            {
+
+                correctMouth = true;
+
+            }
+
+            else
+            {
+
+                correctMouth = false;
+
+            }
+
+            CorrectCombo();
+
+        }
     }
 
 
