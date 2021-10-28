@@ -59,20 +59,26 @@ namespace MobileTesting
         bool correctGlasses = false;
         bool correctMouth = false;
 
-        void CorrectCombo()
+        void KillProgram() {
+            System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+        }
+
+        async void CorrectCombo()
         {
             if (correctHat && correctGlasses && correctMouth)
             {
                 Lock.Source = "unlock.png";
+
+                await Task.Delay(2000);
+
+
+                KillProgram();
             }
 
             else
             {
                 Lock.Source = "lock.png";
             }
-
-            //Thread.Sleep(1000);
-            //System.Diagnostics.Process.GetCurrentProcess().Kill();
 
         }
 
